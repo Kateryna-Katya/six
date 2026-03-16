@@ -1,12 +1,17 @@
 :root {
     --bg-dark: #0a0a0b;
     --bg-card: #141417;
-    --accent: #00ff9d;
-    --text-main: #e0e0e0;
+    --accent: #139207;
+    --accent-glow: rgba(17, 173, 30, 0.2);
+    /* Мягкое свечение */
+    --text-main: #0ec454;
     --text-dim: #949494;
-    --white: #ffffff;
+    --white: #1ece3b;
     --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     --container-width: 1280px;
+
+    /* Добавим градиент для этой палитры */
+    --gradient-accent: linear-gradient(135deg, #304b40 0%, #00d1ff 100%);
 }
 
 /* Reset & Global */

@@ -1,10 +1,4 @@
-/**
- * PROJECT: <?= $domainTitle ?>
- * ROLE: AI Web Assistant
- * STACK: GSAP, ScrollTrigger, Lucide Icons, Vanilla-Tilt
- */
 
-// 1. Регистрация плагина
 gsap.registerPlugin(ScrollTrigger);
 
 
