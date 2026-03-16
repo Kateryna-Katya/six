@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $domainTitle ?> — Искусство создания AI-ассистентов</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTQiIHN0cm9rZT0iIzAwZmY5ZCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2Utb3BhY2l0eT0iMC4zIi8+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iOSIgc3Ryb2tlPSIjMDBmZjlkIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjQgMiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjQiIGZpbGw9IiMwMGZmOWQiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9Im9wYWNpdHkiIHZhbHVlcz0iMTswLjQ7MSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIC8+PC9jaXJjbGU+PC9zdmc+">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="./#hero" class="logo">
+                <span class="logo__dot"></span>
+                <span class="logo__text"><?= $domainTitle ?></span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="./#hero" class="nav__link active">Главная</a></li>
+                    <li><a href="./#learning" class="nav__link">Обучение</a></li>
+                    <li><a href="./#tech" class="nav__link">Технологии</a></li>
+                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
+                    <li><a href="./#blog" class="nav__link">Блог</a></li>
+                </ul>
+            </nav>
+            
+            <a href="./#contact" class="btn btn--outline header__btn">
+                <span>Связаться</span>
+            </a>
+            
+            <button class="burger" aria-label="Menu">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section id="hero" class="section-snap hero">
+            <div class="hero__bg-glow"></div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="hero__badge">Технология нового поколения</div>
+                    <h1 class="hero__title">
+                        Создаем <span class="text-accent">AI-ассистентов</span>,<br>
+                        которые меняют правила игры
+                    </h1>
+                    <p class="hero__subtitle">
+                        Инновационная платформа для разработки ботов: от простых решений до сложных нейронных систем. Переосмыслите подход к цифровому развитию и воплотите мечты в реальность.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn header__btn">
+                            <span>Начать сейчас</span>
+                            <i data-lucide="arrow-right" style="margin-left: 8px; width: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <svg class="neural-svg" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="neural-network-group">
+                            <path class="neural-path" d="M150,300 L250,200 L400,250 L550,150 L650,300 L550,450 L400,350 L250,400 Z" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.3"/>
+                            <path class="neural-path" d="M250,200 L400,100 L550,150" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.3"/>
+                            <path class="neural-path" d="M150,300 L250,400 L400,500 L550,450" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.3"/>
+                            <path class="neural-path" d="M400,250 L400,350" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.3"/>
+                            <path class="neural-path" d="M250,200 L550,450" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.2"/>
+                             <path class="neural-path" d="M250,400 L550,150" stroke="var(--accent)" stroke-width="1" stroke-opacity="0.2"/>
+                            
+                            <circle class="neural-node" cx="150" cy="300" r="6" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="250" cy="200" r="8" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="400" cy="100" r="5" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="550" cy="150" r="7" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="650" cy="300" r="9" fill="var(--white)"/>
+                            <circle class="neural-node" cx="550" cy="450" r="7" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="400" cy="500" r="5" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="250" cy="400" r="8" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="400" cy="250" r="10" fill="var(--accent)"/>
+                            <circle class="neural-node" cx="400" cy="350" r="10" fill="var(--accent)"/>
+
+                            <circle class="neural-signal" r="4" fill="var(--white)">
+                                <animateMotion dur="6s" repeatCount="indefinite" path="M150,300 L250,200 L400,250 L550,150 L650,300" />
+                            </circle>
+                             <circle class="neural-signal" r="3" fill="var(--accent)">
+                                <animateMotion dur="8s" begin="1s" repeatCount="indefinite" path="M150,300 L250,400 L400,500 L550,450 L650,300" />
+                            </circle>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="learning" class="section-snap learning">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-aos="fade-up">Пошаговый путь <span class="text-accent">мастера</span></h2>
+                    <p class="section-subtitle">Простая адаптация без сложностей: от базовых чат-ботов до автономных агентов.</p>
+                </div>
+        
+                <div class="learning__grid">
+                    <div class="tilt-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="tilt-card__content">
+                            <div class="tilt-card__icon">
+                                <i data-lucide="message-square-code"></i>
+                            </div>
+                            <h3 class="tilt-card__title">Архитектура диалога</h3>
+                            <p class="tilt-card__text">Разберитесь, как проектировать логику ответов и управлять контекстом без опыта программирования.</p>
+                            <span class="tilt-card__step">01</span>
+                        </div>
+                    </div>
+        
+                    <div class="tilt-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="tilt-card__content">
+                            <div class="tilt-card__icon">
+                                <i data-lucide="brain-circuit"></i>
+                            </div>
+                            <h3 class="tilt-card__title">Интеграция LLM</h3>
+                            <p class="tilt-card__text">Подключение API нейросетей нового поколения и настройка параметров генерации (Temperature, Top-P).</p>
+                            <span class="tilt-card__step">02</span>
+                        </div>
+                    </div>
+        
+                    <div class="tilt-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="tilt-card__content">
+                            <div class="tilt-card__icon">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <h3 class="tilt-card__title">Векторные базы</h3>
+                            <p class="tilt-card__text">Обучите бота работать с вашими данными, используя передовую цифровую инфраструктуру знаний.</p>
+                            <span class="tilt-card__step">03</span>
+                        </div>
+                    </div>
+        
+                    <div class="tilt-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="tilt-card__content">
+                            <div class="tilt-card__icon">
+                                <i data-lucide="rocket"></i>
+                            </div>
+                            <h3 class="tilt-card__title">Масштабирование</h3>
+                            <p class="tilt-card__text">Запуск платформы, которая работает на вас 24/7, обеспечивая пассивный доход и автоматизацию.</p>
+                            <span class="tilt-card__step">04</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tech" class="section-snap tech">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наш <span class="text-accent">Стек</span></h2>
+                    <p class="section-subtitle">Используем решения, которые меняют правила игры. Только проверенные инструменты для ваших AI-ассистентов.</p>
+                </div>
+            </div>
+        
+            <div class="tech__marquee-wrapper">
+                <div class="tech__marquee">
+                    <div class="tech__track">
+                        <div class="tech__item"><span>Python</span></div>
+                        <div class="tech__item"><span>OpenAI</span></div>
+                        <div class="tech__item"><span>LangChain</span></div>
+                        <div class="tech__item"><span>PyTorch</span></div>
+                        <div class="tech__item"><span>TensorFlow</span></div>
+                        <div class="tech__item"><span>FastAPI</span></div>
+                        <div class="tech__item"><span>Node.js</span></div>
+                        <div class="tech__item"><span>Pinecone</span></div>
+                        <div class="tech__item"><span>Python</span></div>
+                        <div class="tech__item"><span>OpenAI</span></div>
+                        <div class="tech__item"><span>LangChain</span></div>
+                        <div class="tech__item"><span>PyTorch</span></div>
+                        <div class="tech__item"><span>TensorFlow</span></div>
+                        <div class="tech__item"><span>FastAPI</span></div>
+                        <div class="tech__item"><span>Node.js</span></div>
+                        <div class="tech__item"><span>Pinecone</span></div>
+                    </div>
+                </div>
+        
+                <div class="tech__marquee tech__marquee--reverse">
+                    <div class="tech__track">
+                        <div class="tech__item"><span>DeepSeek</span></div>
+                        <div class="tech__item"><span>Claude 3.5</span></div>
+                        <div class="tech__item"><span>Docker</span></div>
+                        <div class="tech__item"><span>Kubernetes</span></div>
+                        <div class="tech__item"><span>Redis</span></div>
+                        <div class="tech__item"><span>PostgreSQL</span></div>
+                        <div class="tech__item"><span>LlamaIndex</span></div>
+                        <div class="tech__item"><span>HuggingFace</span></div>
+                        <div class="tech__item"><span>DeepSeek</span></div>
+                        <div class="tech__item"><span>Claude 3.5</span></div>
+                        <div class="tech__item"><span>Docker</span></div>
+                        <div class="tech__item"><span>Kubernetes</span></div>
+                        <div class="tech__item"><span>Redis</span></div>
+                        <div class="tech__item"><span>PostgreSQL</span></div>
+                        <div class="tech__item"><span>LlamaIndex</span></div>
+                        <div class="tech__item"><span>HuggingFace</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cases" class="section-snap cases">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Реализованные <span class="text-accent">Кейсы</span></h2>
+                    <p class="section-subtitle">Решения, которые меняют правила игры: от автоматизации поддержки до сложных аналитических систем.</p>
+                </div>
+        
+                <div class="timeline">
+                    <div class="timeline__line"></div>
+                    
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Январь 2026</span>
+                            <h3 class="timeline__item-title">AI-Консьерж для ритейла</h3>
+                            <p class="timeline__item-text">Внедрение ассистента нового поколения, обрабатывающего 90% запросов клиентов без участия оператора. Программа пассивного дохода за счет снижения издержек.</p>
+                        </div>
+                    </div>
+        
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Декабрь 2025</span>
+                            <h3 class="timeline__item-title">HR-Аналитик на базе LLM</h3>
+                            <p class="timeline__item-text">Платформа года по версии внутренних тестов корпорации. Автоматизация первичного скоринга резюме и проведение интервью в Telegram.</p>
+                        </div>
+                    </div>
+        
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Ноябрь 2025</span>
+                            <h3 class="timeline__item-title">Автопилот для техподдержки</h3>
+                            <p class="timeline__item-text">Передовая цифровая инфраструктура для обработки тикетов. Подключение занимает 2 минуты, результат — мгновенный рост лояльности.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="blog" class="section-snap blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наш <span class="text-accent">Блог</span></h2>
+                    <p class="section-subtitle">AI-инструменты для реальных задач. Делимся опытом и стратегиями роста на базе инноваций.</p>
+                </div>
+        
+                <div class="blog__grid">
+                    <article class="blog__card">
+                        <div class="blog__card-header">
+                            <span class="blog__category">Инсайды</span>
+                            <span class="blog__read-time">5 мин</span>
+                        </div>
+                        <h3 class="blog__card-title">Как построить карьеру, которая работает на вас в эпоху AI</h3>
+                        <p class="blog__card-excerpt">Разбор стратегий адаптации к новому рынку труда и использованию нейросетей для личной эффективности.</p>
+                        <a href="#contact" class="blog__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                    </article>
+        
+                    <article class="blog__card">
+                        <div class="blog__card-header">
+                            <span class="blog__category">Технологии</span>
+                            <span class="blog__read-time">8 мин</span>
+                        </div>
+                        <h3 class="blog__card-title">Выгода и программы: нейросети как источник дохода</h3>
+                        <p class="blog__card-excerpt">Технология для пассивного дохода доступна уже сегодня. Практики, применимые без глубокого кода.</p>
+                        <a href="#contact" class="blog__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                    </article>
+        
+                    <article class="blog__card">
+                        <div class="blog__card-header">
+                            <span class="blog__category">Кейсы</span>
+                            <span class="blog__read-time">4 мин</span>
+                        </div>
+                        <h3 class="blog__card-title">Предложение активно только в странах ЕС: обзор рынка</h3>
+                        <p class="blog__card-excerpt">Почему Германия становится хабом для разработки AI-ассистентов нового поколения. Оценить перспективы проекта.</p>
+                        <a href="#contact" class="blog__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                    </article>
+        
+                    <article class="blog__card">
+                        <div class="blog__card-header">
+                            <span class="blog__category">Гайд</span>
+                            <span class="blog__read-time">10 мин</span>
+                        </div>
+                        <h3 class="blog__card-title">Быстрый и лёгкий старт: твой первый бот за 60 минут</h3>
+                        <p class="blog__card-excerpt">Пошаговый путь, понятный каждому. От регистрации API до первого диалога с пользователем.</p>
+                        <a href="#contact" class="blog__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-snap contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h2 class="section-title">Готовы к <span class="text-accent">старту?</span></h2>
+                        <p class="contact__text">Получить больше информации или заказать экспертную поддержку на всех этапах разработки. Мы ответим в течение 15 минут.</p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <span class="contact__label">Телефон</span>
+                                <a href="tel:+493037516204" class="contact__value">+49 30 3751 6204</a>
+                            </div>
+                            <div class="contact__item">
+                                <span class="contact__label">Email</span>
+                                <a href="mailto:support@<?= $fullDomain ?>" class="contact__value">support@<?= $fullDomain ?></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="contact__form-wrapper">
+                        <form id="ai-form" class="contact__form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" id="phone-input" placeholder="Телефон" required>
+                            </div>
+                            
+                            <div class="form-captcha">
+                                <span id="captcha-question">5 + 3 =</span>
+                                <input type="number" id="captcha-answer" placeholder="?" required>
+                            </div>
+        
+                            <label class="form-checkbox">
+                                <input type="checkbox" required>
+                                <span>Я согласен с <a href="./personal-data-policy.php">политикой обработки данных</a></span>
+                            </label>
+        
+                            <button type="submit" class="btn btn--primary form-btn">
+                                <span>Запросить доступ</span>
+                            </button>
+        
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <a href="./#hero" class="logo logo--footer">
+                    <span class="logo__dot"></span>
+                    <span class="logo__text"><?= $domainTitle ?></span>
+                </a>
+                <p class="footer__description">
+                    Технологии нового поколения для создания умных ботов и AI-инфраструктуры. Переосмыслите подход к разработке.
+                </p>
+            </div>
+            
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__links">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#learning">Обучение</a></li>
+                    <li><a href="#tech">Технологии</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h4 class="footer__title">Юридическая информация</h4>
+                <ul class="footer__links">
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./cookies.php">Cookie Policy</a></li>
+                    <li><a href="./terms.php">Terms of Service</a></li>
+                    <li><a href="./return.php">Return Policy</a></li>
+                    <li><a href="./disclaimer.php">Disclaimer</a></li>
+                    <li><a href="./contact.php">Contact Us</a></li>
+                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <ul class="footer__contact-info">
+                    <li>
+                        <i data-lucide="map-pin"></i>
+                        <span>Friedrichstraße 176, 10117 Berlin, Germany</span>
+                    </li>
+                    <li>
+                        <i data-lucide="phone"></i>
+                        <a href="tel:+493037516204">+49 30 3751 6204</a>
+                    </li>
+                    <li>
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:hello@<?= $fullDomain ?>">hello@<?= $fullDomain ?></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer__bottom">
+            <p>&copy; 2026 <?= $domainTitle ?>. Все права защищены. Платформа уже доступна в Европе.</p>
+        </div>
+    </footer>
+    <div id="cookie-popup" class="cookie-popup">
+        <div class="cookie-popup__content">
+            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
+            <button id="accept-cookies" class="btn btn--outline btn--sm">Принять</button>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="./#hero" class="mobile-nav__link">Главная</a>
+            <a href="./#learning" class="mobile-nav__link">Обучение</a>
+            <a href="./#tech" class="mobile-nav__link">Технологии</a>
+            <a href="./#cases" class="mobile-nav__link">Кейсы</a>
+            <a href="./#blog" class="mobile-nav__link">Блог</a>
+            <a href="./#contact" class="mobile-nav__link btn btn--outline">Связаться</a>
+        </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
